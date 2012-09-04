@@ -26,6 +26,9 @@ function addon:PLAYER_LOGIN()
     addon.PLAYER_LOGIN = nil
     if( GetCVar'autointeract' == '1' ) then
         c2g = true
+        dataobj.text = ON
+    else
+        dataobj.text = OFF
     end
 end
 
